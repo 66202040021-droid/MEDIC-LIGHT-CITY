@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log เข้าเวร - ออกเวร</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- หน้า Login -->
+        <div id="loginPage">
+            <header>
+                <h2>🕒 ระบบ Log เวร</h2>
+                <p>กรุณาเข้าสู่ระบบ</p>
+            </header>
+            <div class="content">
+                <input type="text" id="usernameInput" class="input-field" placeholder="ชื่อผู้ใช้" autocomplete="off">
+                <input type="password" id="passwordInput" class="input-field" placeholder="รหัสผ่าน">
+                <button id="btnLogin" class="btn-login">เข้าสู่ระบบ</button>
+                <button id="btnManualTop" class="btn-manual" style="margin-top: 10px;">📝 กรอกเวลา</button>
+            </div>
+        </div>
+
+        <!-- หน้าหลัก -->
+        <div id="mainPage" class="hidden">
+            <header>
+                <h2>🕒 Log เข้าเวร - ออกเวร</h2>
+                <p>ชื่อ: <strong id="currentUser"></strong></p>
+                <button id="btnLogout" class="btn-logout">ออกจากระบบ</button>
+            </header>
+            
+            <div class="content">
+                <div class="time" id="currentTime">00:00:00</div>
+                
+                <button id="btnIn">✅ เข้าเวร</button>
+                <button id="btnOut" disabled>🚪 ออกเวร</button>
+                <button id="btnManual" class="btn-manual">📝 กรอกเวลา</button>
+                
+                <div class="log">
+                    <h3>📋 ประวัติของ <span id="userLogName"></span></h3>
+                    <div id="logList"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: url('IMG_4433.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.container { 
+    max-width: 520px; 
+    margin: 30px auto; 
+    background: rgba(255, 255, 255, 0.12); 
+    backdrop-filter: blur(12px);
+    border-radius: 20px; 
+    overflow: hidden; 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); 
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+header { 
+    background: rgba(20, 25, 40, 0.95); 
+    color: white; 
+    padding: 25px 20px; 
+    text-align: center; 
+}
+
+.content {
+    padding: 30px 25px;
+}
+
+/* ========== ช่อง input ใหม่ สวยขึ้น ========== */
+.input-field {
+    width: 90%;
+    padding: 16px 18px;
+    margin: 5px 0;
+    font-size: 1.1rem;
+    background: rgba(255, 255, 255, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    color: white;
+    backdrop-filter: blur(8px);
+}
+
+.input-field::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #74b9ff;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 0 4px rgba(116, 185, 255, 0.2);
+}
+
+/* ปุ่มต่าง ๆ */
+button {
+    width: 100%;
+    padding: 16px;
+    margin: 12px 0;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-login { 
+    background: #3498db; 
+    color: white; 
+}
+.btn-login:hover { background: #2980b9; }
+
+.btn-in { background: #27ae60; color: white; }
+.btn-in:hover { background: #219653; }
+
+.btn-out { background: #e74c3c; color: white; }
+.btn-out:hover { background: #c0392b; }
+
+.btn-manual { 
+    background: #9b59b6; 
+    color: white; 
+}
+.btn-manual:hover { background: #8e44ad; }
+
+.btn-logout { 
+    background: #95a5a6; 
+    color: white; 
+    padding: 8px 16px; 
+    width: 100%; 
+    font-size: 0.95rem; 
+}
+
+/* Log Item */
+.log-item {
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.15);
+    margin: 8px 0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    backdrop-filter: blur(6px);
+}
+
+.time { 
+    font-size: 2.8rem; 
+    font-weight: bold; 
+    text-align: center; 
+    margin: 20px 0; 
+    color: white; 
+    text-shadow: 0 3px 8px rgba(0,0,0,0.6);
+}
+
+.hidden { display: none !important; }

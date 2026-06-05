@@ -8,6 +8,7 @@ const users = {
     "sammy vet": "006",
     "river lily": "007",
     "tofu shiroibara": "008"
+    "tofu": "008"
 };
 
 let currentUser = null;
